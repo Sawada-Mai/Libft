@@ -1,32 +1,39 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_toupper.c                                       :+:      :+:    :+:   */
+/*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: msawada <msawada@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/02/17 17:08:51 by msawada           #+#    #+#             */
-/*   Updated: 2024/02/19 14:17:08 by msawada          ###   ########.fr       */
+/*   Created: 2024/02/19 12:51:53 by msawada           #+#    #+#             */
+/*   Updated: 2024/02/19 12:52:11 by msawada          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_toupper(int c)
+#include "libft.h"
+void printc(int n, int fd)
 {
-	if (c >= 'a' && c <= 'z')
-	{
-		c -= 'a' - 'A';
-	}
-	return (c);
+	char	c;
+
+	c = n + '0';
+	write(fd, &c, 1);
 }
 
-// #include <stdio.h>
-// #include <ctype.h>
-// int main(void)
-// {
-// 	printf("%c\n", ft_toupper('t'));
-// 	printf("%c\n\n", toupper('t'));
-// 	printf("%c\n", ft_toupper('T'));
-// 	printf("%c\n\n", ft_toupper('T'));
-// 	printf("%c\n", ft_toupper('2'));
-// 	printf("%c\n", toupper('2'));
-// }
+void ft_putnbr_fd(int n, int fd)
+{
+	if (n == -2147483648)
+	{
+		write(fd, "-2147483648", 11);
+		return ;
+	}
+	if (n < 0)
+	{
+		write(fd, "-", 1);
+		n *= -1;
+	}
+	if (n >= 10)
+	{
+		ft_putnbr_fd(n/10, fd);
+	}
+	printc((n % 10), fd);
+}

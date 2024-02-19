@@ -6,7 +6,7 @@
 /*   By: msawada <msawada@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/17 18:04:55 by msawada           #+#    #+#             */
-/*   Updated: 2024/02/17 19:22:13 by msawada          ###   ########.fr       */
+/*   Updated: 2024/02/19 14:16:29 by msawada          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,20 +45,20 @@ size_t ft_strlcat(char *dest, const char *src, size_t size)
 	return (d + s);
 }
 
-#include <stdio.h>
-#include <string.h>
-int main(void)
-{
-	char src1[100] = "hello";
-	char src2[100] = "_Tokyo";
-	char src3[100] = "hello";
-	char src4[100] = "_Tokyo";
-	int i;
+// #include <stdio.h>
+// #include <string.h>
+// int main(void)
+// {
+// 	char src1[100] = "hello";
+// 	char src2[100] = "_Tokyo";
+// 	char src3[100] = "hello";
+// 	char src4[100] = "_Tokyo";
+// 	int i;
 
-	i = ft_strlcat(src1, src2, 15);
-	printf("%d\n", i);
-	printf("%s\n", src1);
-	i = strlcat(src3, src4, 15);
-	printf("%d\n", i);
-	printf("%s\n", src1);
-}
+// 	i = ft_strlcat(src1, src2, 15);
+// 	printf("%d\n", i);
+// 	printf("%s\n", src1);
+// 	i = strlcat(src3, src4, 15);
+// 	printf("%d\n", i);
+// 	printf("%s\n", src1);
+// }

@@ -6,7 +6,7 @@
 /*   By: msawada <msawada@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/17 16:52:11 by msawada           #+#    #+#             */
-/*   Updated: 2024/02/17 17:00:39 by msawada          ###   ########.fr       */
+/*   Updated: 2024/02/19 14:15:57 by msawada          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,14 +18,14 @@ int ft_isascii(int c)
 		return (0);
 }
 
-#include <stdio.h>
-#include <ctype.h>
-int main(void)
-{
-	printf("%d\n", ft_isascii('4'));
-	printf("%d\n\n",isascii('4'));
-	printf("%d\n", ft_isascii('t'));
-	printf("%d\n\n", isascii('t'));
-	printf("%d\n", ft_isascii('÷'));
-	printf("%d\n", isascii('÷'));
-}
+// #include <stdio.h>
+// #include <ctype.h>
+// int main(void)
+// {
+// 	printf("%d\n", ft_isascii('4'));
+// 	printf("%d\n\n",isascii('4'));
+// 	printf("%d\n", ft_isascii('t'));
+// 	printf("%d\n\n", isascii('t'));
+// 	printf("%d\n", ft_isascii('÷'));
+// 	printf("%d\n", isascii('÷'));
+// }

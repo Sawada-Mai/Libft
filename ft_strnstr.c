@@ -6,7 +6,7 @@
 /*   By: msawada <msawada@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/17 18:03:48 by msawada           #+#    #+#             */
-/*   Updated: 2024/02/17 18:42:59 by msawada          ###   ########.fr       */
+/*   Updated: 2024/02/19 14:16:51 by msawada          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,21 +50,21 @@ char *ft_strnstr(const char *str1, const char *str2, size_t len)
 	return (NULL);
 }
 
-#include <stdio.h>
-#include <string.h>
-int main() {
-	const char *str1 = "libft-test-tokyo";
-	const char *str2 = "test";
-	// size_t len = 13;
+// #include <stdio.h>
+// #include <string.h>
+// int main() {
+// 	const char *str1 = "libft-test-tokyo";
+// 	const char *str2 = "test";
+// 	// size_t len = 13;
 
-	// char *result = ft_strnstr(str1, str2, 13);
-	char *result = strnstr(str1, str2, 13);
+// 	// char *result = ft_strnstr(str1, str2, 13);
+// 	char *result = strnstr(str1, str2, 13);
 
-	if (result) {
-		printf("1,%s\n", result);
-	} else {
-		printf("2,%s\n", result);
-	}
+// 	if (result) {
+// 		printf("1,%s\n", result);
+// 	} else {
+// 		printf("2,%s\n", result);
+// 	}
 
-	return 0;
-}
+// 	return 0;
+// }

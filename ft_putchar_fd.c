@@ -1,32 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_toupper.c                                       :+:      :+:    :+:   */
+/*   ft_putchar_fd.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: msawada <msawada@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/02/17 17:08:51 by msawada           #+#    #+#             */
-/*   Updated: 2024/02/19 14:17:08 by msawada          ###   ########.fr       */
+/*   Created: 2024/02/19 12:50:50 by msawada           #+#    #+#             */
+/*   Updated: 2024/02/19 12:50:52 by msawada          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_toupper(int c)
+#include "libft.h"
+void ft_putchar_fd(char c, int fd)
 {
-	if (c >= 'a' && c <= 'z')
+	if (fd < 0 || fd > 1024)
 	{
-		c -= 'a' - 'A';
+		return ;
 	}
-	return (c);
+	write(fd, &c, 1);
 }
-
-// #include <stdio.h>
-// #include <ctype.h>
-// int main(void)
-// {
-// 	printf("%c\n", ft_toupper('t'));
-// 	printf("%c\n\n", toupper('t'));
-// 	printf("%c\n", ft_toupper('T'));
-// 	printf("%c\n\n", ft_toupper('T'));
-// 	printf("%c\n", ft_toupper('2'));
-// 	printf("%c\n", toupper('2'));
-// }

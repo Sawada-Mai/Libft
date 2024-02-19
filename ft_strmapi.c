@@ -1,32 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_toupper.c                                       :+:      :+:    :+:   */
+/*   ft_strmapi.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: msawada <msawada@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/02/17 17:08:51 by msawada           #+#    #+#             */
-/*   Updated: 2024/02/19 14:17:08 by msawada          ###   ########.fr       */
+/*   Created: 2024/02/19 12:49:41 by msawada           #+#    #+#             */
+/*   Updated: 2024/02/19 12:49:43 by msawada          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_toupper(int c)
+#include "libft.h"
+char *ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
-	if (c >= 'a' && c <= 'z')
-	{
-		c -= 'a' - 'A';
-	}
-	return (c);
-}
+	char			*str;
+	unsigned int	i;
+	unsigned int	len;
 
-// #include <stdio.h>
-// #include <ctype.h>
-// int main(void)
-// {
-// 	printf("%c\n", ft_toupper('t'));
-// 	printf("%c\n\n", toupper('t'));
-// 	printf("%c\n", ft_toupper('T'));
-// 	printf("%c\n\n", ft_toupper('T'));
-// 	printf("%c\n", ft_toupper('2'));
-// 	printf("%c\n", toupper('2'));
-// }
+	if (s == NULL)
+		return (NULL);
+	len = ft_strlen(s);
+	str = (char *)malloc(sizeof(char) * (len + 1));
+	if (str == NULL)
+		return (NULL);
+	i = 0;
+	while (i < len)
+	{
+		str[i] = f(i, s[i]);
+		i++;
+	}
+	str[i] = '\0';
+	return (str);
+}

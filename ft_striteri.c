@@ -1,32 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_toupper.c                                       :+:      :+:    :+:   */
+/*   ft_striteri.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: msawada <msawada@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/02/17 17:08:51 by msawada           #+#    #+#             */
-/*   Updated: 2024/02/19 14:17:08 by msawada          ###   ########.fr       */
+/*   Created: 2024/02/19 12:50:07 by msawada           #+#    #+#             */
+/*   Updated: 2024/02/19 12:50:21 by msawada          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_toupper(int c)
+#include "libft.h"
+void ft_striteri(char *s, void (*f)(unsigned int, char*))
 {
-	if (c >= 'a' && c <= 'z')
-	{
-		c -= 'a' - 'A';
-	}
-	return (c);
-}
+	unsigned int	i;
 
-// #include <stdio.h>
-// #include <ctype.h>
-// int main(void)
-// {
-// 	printf("%c\n", ft_toupper('t'));
-// 	printf("%c\n\n", toupper('t'));
-// 	printf("%c\n", ft_toupper('T'));
-// 	printf("%c\n\n", ft_toupper('T'));
-// 	printf("%c\n", ft_toupper('2'));
-// 	printf("%c\n", toupper('2'));
-// }
+	i = 0;
+	while (s[i])
+	{
+		f(i, &s[i]);
+		i++;
+	}
+}
