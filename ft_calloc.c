@@ -6,21 +6,29 @@
 /*   By: msawada <msawada@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/19 12:36:18 by msawada           #+#    #+#             */
-/*   Updated: 2024/02/19 14:15:45 by msawada          ###   ########.fr       */
+/*   Updated: 2024/02/19 16:36:18 by msawada          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-void *ft_calloc(size_t nmemb, size_t size)
+void *ft_calloc(size_t count, size_t size)
 {
 	void	*p;
+	size_t	i;
 
-	if (nmemb != 0 && size != 0 && SIZE_MAX / nmemb < size)
+	i = 0;
+	if (count != 0 && size != 0 && SIZE_MAX / count < size)
 		return (NULL);
-	p = (void*)malloc(nmemb * size);
+	else if (size == SIZE_MAX)
+		return (NULL);
+	if (count == 0 || size == 0)
+		i = 1;
+	else
+		i = count * size;
+	p = (void*)malloc(i);
 	if (p == NULL)
 		return (NULL);
-	ft_memset(p, 0, nmemb * size);
+	ft_memset(p, 0, i);
 	return (p);
 }
 
@@ -29,7 +37,7 @@ void *ft_calloc(size_t nmemb, size_t size)
 // #include <string.h>
 // int main() {
 // 	int n = 0;
-// 	int *arr = (int*) ft_calloc(n, sizeof(int));
+// 	int *arr = (int*) ft_calloc(INT_MAX, INT_MAX);
 
 // 	if (arr == NULL) {
 // 		printf("メモリの確保に失敗しました。\n");

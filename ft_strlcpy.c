@@ -6,23 +6,11 @@
 /*   By: msawada <msawada@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/17 18:04:45 by msawada           #+#    #+#             */
-/*   Updated: 2024/02/19 14:16:36 by msawada          ###   ########.fr       */
+/*   Updated: 2024/02/19 17:09:42 by msawada          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-size_t ft_strlen(const char *s)
-{
-	size_t i;
-
-	i = 0;
-	while (s[i])
-	{
-		i++;
-	}
-	return i;
-}
-
 size_t ft_strlcpy(char * restrict dst, const char * restrict src, size_t len)
 {
 	size_t i;

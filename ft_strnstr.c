@@ -6,7 +6,7 @@
 /*   By: msawada <msawada@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/17 18:03:48 by msawada           #+#    #+#             */
-/*   Updated: 2024/02/19 14:16:51 by msawada          ###   ########.fr       */
+/*   Updated: 2024/02/19 15:35:33 by msawada          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,9 +32,9 @@ char *ft_strnstr(const char *str1, const char *str2, size_t len)
 	size_t	i;
 
 	i = 0;
-	if (len == 0 && *str2 == '\0')
+	if ((len == 0 && *str2 == '\0'))
 		return ((char *)str1);
-	if (len == 0)
+	if ((len == 0) || (*str1 == '\0' && *str2 != '\0' && len == (size_t)-1))
 		return (NULL);
 	if ((*str1 != '\0' && *str2 == '\0') || (*str1 == '\0' && *str2 == '\0'))
 		return ((char *)str1);
@@ -53,12 +53,12 @@ char *ft_strnstr(const char *str1, const char *str2, size_t len)
 // #include <stdio.h>
 // #include <string.h>
 // int main() {
-// 	const char *str1 = "libft-test-tokyo";
-// 	const char *str2 = "test";
+// 	const char *str1 = "";
+// 	const char *str2 = "";
 // 	// size_t len = 13;
 
-// 	// char *result = ft_strnstr(str1, str2, 13);
-// 	char *result = strnstr(str1, str2, 13);
+// 	// char *result = ft_strnstr(str1, str2, -1);
+// 	char *result = strnstr(str1, str2, -1);
 
 // 	if (result) {
 // 		printf("1,%s\n", result);

@@ -6,7 +6,7 @@
 /*   By: msawada <msawada@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/19 12:30:50 by msawada           #+#    #+#             */
-/*   Updated: 2024/02/19 14:15:24 by msawada          ###   ########.fr       */
+/*   Updated: 2024/02/19 14:22:46 by msawada          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,31 +22,32 @@ int check_num(size_t num, int sign)
 	return (num * sign);
 }
 
-int atoi(const char *str)
+int ft_atoi(const char *nptr)
 {
 	int sign;
 	size_t num;
 
 	sign = 1;
 	num = 0;
-	while (*str == '\a' || *str == '\b' || *str =='\t' || *str =='\n' 
-	|| *str =='\v' || *str =='\f' || *str =='\r'|| *str ==' ')
+	while (*nptr == '\a' || *nptr == '\b' || *nptr =='\t' || *nptr =='\n' 
+	|| *nptr =='\v' || *nptr =='\f' || *nptr =='\r'|| *nptr ==' ')
 	{
-		str++;
+		nptr++;
 	}
-	if (*str == '-' || *str == '+')
+	if (*nptr == '-' || *nptr == '+')
 	{
-		if (*str == '-')
+		if (*nptr == '-')
 			sign *= -1;
-		str++;
+		nptr++;
 	}
-	while (*str >= '0' && *str <= '9')
+	while (*nptr >= '0' && *nptr <= '9')
 	{
-		num = (num * 10) + (*str - '0');
-		str++;
+		num = (num * 10) + (*nptr - '0');
+		nptr++;
 	}
 	return (check_num(num, sign));
 }
+
 
 // #include <stdio.h>
 // #include <stdlib.h>
