@@ -6,7 +6,7 @@
 /*   By: msawada <msawada@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/17 17:21:54 by msawada           #+#    #+#             */
-/*   Updated: 2024/02/19 14:16:41 by msawada          ###   ########.fr       */
+/*   Updated: 2024/02/25 11:36:37 by msawada          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,8 +27,8 @@ size_t ft_strlen(const char *s)
 // #include <string.h>
 // int main(void)
 // {
-// 	int str1 = ft_strlen("Hello!");
-// 	int str2 = strlen("Hello!");
+// 	int str1 = ft_strlen("12345");
+// 	int str2 = strlen("12345");
 
 // 	printf("%d\n", str1);
 // 	printf("%d\n", str2);

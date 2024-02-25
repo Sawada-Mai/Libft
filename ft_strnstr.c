@@ -6,7 +6,7 @@
 /*   By: msawada <msawada@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/17 18:03:48 by msawada           #+#    #+#             */
-/*   Updated: 2024/02/19 15:35:33 by msawada          ###   ########.fr       */
+/*   Updated: 2024/02/25 16:57:31 by msawada          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,7 @@ char *ft_strnstr(const char *str1, const char *str2, size_t len)
 		return (NULL);
 	if ((*str1 != '\0' && *str2 == '\0') || (*str1 == '\0' && *str2 == '\0'))
 		return ((char *)str1);
-	while (str1[i] || i < len)
+	while (str1[i] && i < len)
 	{
 		if (str1[i] == str2[0])
 		{
@@ -53,12 +53,12 @@ char *ft_strnstr(const char *str1, const char *str2, size_t len)
 // #include <stdio.h>
 // #include <string.h>
 // int main() {
-// 	const char *str1 = "";
-// 	const char *str2 = "";
+// 	// const char *str1 = "";
+// 	// const char *str2 = "rytr";
 // 	// size_t len = 13;
 
-// 	// char *result = ft_strnstr(str1, str2, -1);
-// 	char *result = strnstr(str1, str2, -1);
+// 	// char *result = ft_strnstr(NULL, "is", 0);
+// 	char *result = strnstr(NULL, "is", 0);
 
 // 	if (result) {
 // 		printf("1,%s\n", result);

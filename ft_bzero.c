@@ -6,7 +6,7 @@
 /*   By: msawada <msawada@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/19 12:54:02 by msawada           #+#    #+#             */
-/*   Updated: 2024/02/19 12:54:04 by msawada          ###   ########.fr       */
+/*   Updated: 2024/02/25 13:46:26 by msawada          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,7 @@ void ft_bzero(void *s, size_t n)
 }
 
 // #include <stdio.h>
+// #include <string.h>
 // int main(void)
 // {
 // 	char str1[] = "42Tokyo";

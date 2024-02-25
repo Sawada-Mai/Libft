@@ -6,7 +6,7 @@
 /*   By: msawada <msawada@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/19 12:36:18 by msawada           #+#    #+#             */
-/*   Updated: 2024/02/19 16:36:18 by msawada          ###   ########.fr       */
+/*   Updated: 2024/02/25 17:20:07 by msawada          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,7 @@ void *ft_calloc(size_t count, size_t size)
 // #include <string.h>
 // int main() {
 // 	int n = 0;
-// 	int *arr = (int*) ft_calloc(INT_MAX, INT_MAX);
+// 	int *arr = (int*) calloc(0, 0);
 
 // 	if (arr == NULL) {
 // 		printf("メモリの確保に失敗しました。\n");
@@ -46,7 +46,7 @@ void *ft_calloc(size_t count, size_t size)
 
 // 	for (int i = 0; i < n; i++) {
 // 		arr[i] = i;
-// 		printf("%d ", arr[i]);
+// 		printf("%d", arr[i]);
 // 	}
 
 // 	free(arr);

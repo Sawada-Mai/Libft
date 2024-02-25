@@ -6,7 +6,7 @@
 /*   By: msawada <msawada@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/17 17:39:16 by msawada           #+#    #+#             */
-/*   Updated: 2024/02/19 14:16:21 by msawada          ###   ########.fr       */
+/*   Updated: 2024/02/25 11:10:44 by msawada          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ char *ft_strchr(const char *s, int c)
 // int main(void)
 // {
 // 	char str1[] = "42 Tokyo";
-// 	char c = 'T';
+// 	char c = '2';
 
 // 	printf("%s\n", ft_strchr(str1, c));
 // 	printf("%s\n", strchr(str1, c));

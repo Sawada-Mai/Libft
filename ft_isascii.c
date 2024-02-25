@@ -6,7 +6,7 @@
 /*   By: msawada <msawada@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/17 16:52:11 by msawada           #+#    #+#             */
-/*   Updated: 2024/02/19 14:15:57 by msawada          ###   ########.fr       */
+/*   Updated: 2024/02/25 10:44:39 by msawada          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,6 @@ int ft_isascii(int c)
 // 	printf("%d\n\n",isascii('4'));
 // 	printf("%d\n", ft_isascii('t'));
 // 	printf("%d\n\n", isascii('t'));
-// 	printf("%d\n", ft_isascii('÷'));
-// 	printf("%d\n", isascii('÷'));
+// 	printf("%d\n", ft_isascii('\n'));
+// 	printf("%d\n", isascii('\n'));
 // }

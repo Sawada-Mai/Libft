@@ -6,19 +6,19 @@
 /*   By: msawada <msawada@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/19 12:55:26 by msawada           #+#    #+#             */
-/*   Updated: 2024/02/19 12:55:45 by msawada          ###   ########.fr       */
+/*   Updated: 2024/02/25 15:17:51 by msawada          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-void *ft_memchr(const void *s, int a, size_t n)
+void *ft_memchr(const void *s, int c, size_t n)
 {
 	unsigned char *p;
 
 	p = (unsigned char *)s;
 	while (n > 0)
 	{
-		if (*p == (unsigned char)a)
+		if (*p == (unsigned char)c)
 		{
 			return ((void *)p);
 		}

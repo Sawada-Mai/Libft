@@ -6,7 +6,7 @@
 /*   By: msawada <msawada@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/17 18:03:34 by msawada           #+#    #+#             */
-/*   Updated: 2024/02/19 14:20:51 by msawada          ###   ########.fr       */
+/*   Updated: 2024/02/25 16:36:00 by msawada          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,9 +36,9 @@ int ft_strncmp(const char *s1, const char *s2, size_t n)
 // int main(void)
 // {
 // 	char str1[] = "Hello! 42 Tokyo";
-// 	char str2[] = "He";
-// 	int i = 9;
+// 	char str2[] = "Hello";
+// 	int i = 6;
 
-// 	printf("%d\n", ft_strncmp(str1, str2, i));
+// 	// printf("%d\n", ft_strncmp(str1, str2, i));
 // 	printf("%d\n", strncmp(str1, str2, i));
 // }

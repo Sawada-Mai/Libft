@@ -6,7 +6,7 @@
 /*   By: msawada <msawada@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/19 12:30:50 by msawada           #+#    #+#             */
-/*   Updated: 2024/02/23 14:59:46 by msawada          ###   ########.fr       */
+/*   Updated: 2024/02/25 17:12:39 by msawada          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ int check_num(unsigned long long num, int sign)
 int ft_atoi(const char *nptr)
 {
 	int sign;
-	long long num;
+	unsigned long long num;
 
 	sign = 1;
 	num = 0;

@@ -6,7 +6,7 @@
 /*   By: msawada <msawada@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/17 18:04:45 by msawada           #+#    #+#             */
-/*   Updated: 2024/02/19 17:09:42 by msawada          ###   ########.fr       */
+/*   Updated: 2024/02/25 16:04:24 by msawada          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,19 +28,19 @@ size_t ft_strlcpy(char * restrict dst, const char * restrict src, size_t len)
 	return (ft_strlen(src));
 }
 
-// #include <stdio.h>
-// #include <string.h>
-// int main()
-// {
-// 	char dest[15];
-// 	char str1[] = "42_Tokyo";
-// 	int i;
+#include <stdio.h>
+#include <string.h>
+int main()
+{
+	// char dest[] = NULL;
+	// char str1[] = "42_Tokyo";
+	// char c[256] = "42tokyo";
+	int i;
 
-// 	i = ft_strlcpy(dest, str1, 8);
-// 	printf("%s\n", dest);
-// 	printf("%i\n\n", i);
-// 	i = strlcpy(dest, str1, 8);
-// 	printf("%s\n", dest);
-// 	printf("%i\n", i);
-// 	return 0;
-// }
+	i = ft_strlcpy(NULL , "42", 2);
+	printf("%i\n\n", i);
+	// i = strlcpy(dest, str1, 0);
+	// printf("%s\n", dest);
+	// printf("%i\n", i);
+	return 0;
+}

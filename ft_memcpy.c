@@ -6,7 +6,7 @@
 /*   By: msawada <msawada@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/19 12:54:47 by msawada           #+#    #+#             */
-/*   Updated: 2024/02/19 12:54:49 by msawada          ###   ########.fr       */
+/*   Updated: 2024/02/25 14:49:23 by msawada          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,8 +37,8 @@ void *ft_memcpy(void *dest, const void *src, size_t n)
 // {
 // 	char src[] = "42 Tokyo";
 // 	char dest[10];
-// 	// ft_memcpy(dest, src, 5);
-// 	memcpy(dest, src, 5);
-// 	dest[5] = '\0';
+// 	ft_memcpy(dest, src, 0);
+// 	// memcpy(dest, src, 0);
+// 	// dest[5] = '\0';
 // 	printf("%s\n", dest);
 // }
