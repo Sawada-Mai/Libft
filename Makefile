@@ -43,30 +43,23 @@ SRC = ft_atoi.c \
 
 OBJ = $(SRC:.c=.o)
 
-# メインターゲット: all
 all: $(NAME)
 
-# ライブラリのコンパイル
 $(NAME): $(OBJ)
 	ar rc $(NAME) $(OBJ)
 	ranlib $(NAME)
 
-# オブジェクトファイルのコンパイル
 %.o: %.c
 	$(CC) $(CFLAGS) -c $< -o $@
 
-# クリーンアップ
 clean:
 	rm -f $(OBJ)
 
-# ライブラリとオブジェクトの削除
 fclean: clean
 	rm -f $(NAME)
 
-# 再ビルド
 re: fclean all
 
-# 依存関係
 $(OBJ): libft.h
 
 .PHONY: all clean fclean re

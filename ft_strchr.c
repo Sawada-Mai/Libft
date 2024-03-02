@@ -6,12 +6,13 @@
 /*   By: msawada <msawada@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/17 17:39:16 by msawada           #+#    #+#             */
-/*   Updated: 2024/02/25 11:10:44 by msawada          ###   ########.fr       */
+/*   Updated: 2024/03/02 14:51:32 by msawada          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-char *ft_strchr(const char *s, int c)
+
+char	*ft_strchr(const char *s, int c)
 {
 	while (*s)
 	{

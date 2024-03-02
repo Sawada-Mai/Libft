@@ -6,12 +6,13 @@
 /*   By: msawada <msawada@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/19 12:46:33 by msawada           #+#    #+#             */
-/*   Updated: 2024/02/19 12:46:55 by msawada          ###   ########.fr       */
+/*   Updated: 2024/03/02 15:13:52 by msawada          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-char *make_str()
+
+char	*make_str(void)
 {
 	char	*str;
 
@@ -22,7 +23,7 @@ char *make_str()
 	return (str);
 }
 
-char *ft_substr(char const *s, unsigned int start, size_t len)
+char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
 	unsigned int	i;
 	char			*str;

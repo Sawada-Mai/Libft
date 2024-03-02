@@ -6,12 +6,13 @@
 /*   By: msawada <msawada@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/19 12:49:03 by msawada           #+#    #+#             */
-/*   Updated: 2024/02/19 12:49:06 by msawada          ###   ########.fr       */
+/*   Updated: 2024/03/02 18:21:09 by msawada          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-char *ft_store(char *str, long long n, unsigned int d)
+
+char	*ft_store(char *str, long n, unsigned int d)
 {
 	unsigned int	i;
 
@@ -31,7 +32,7 @@ char *ft_store(char *str, long long n, unsigned int d)
 	return (str);
 }
 
-int ft_digit(long long n)
+int	ft_digit(long n)
 {
 	unsigned int	i;
 
@@ -50,16 +51,16 @@ int ft_digit(long long n)
 	return (i);
 }
 
-char *ft_itoa(int n)
+char	*ft_itoa(int n)
 {
 	unsigned int	d;
 	char			*str;
 
-	d = ft_digit((long long)n);
+	d = ft_digit((long)n);
 	str = (char *)malloc(sizeof(char) * (d + 1));
 	if (str == NULL)
 		return (NULL);
-	ft_store(str, (long long)n, d);
+	ft_store(str, (long)n, d);
 	str[d] = '\0';
 	return (str);
 }

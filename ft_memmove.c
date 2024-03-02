@@ -6,14 +6,15 @@
 /*   By: msawada <msawada@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/19 12:55:14 by msawada           #+#    #+#             */
-/*   Updated: 2024/02/25 15:10:05 by msawada          ###   ########.fr       */
+/*   Updated: 2024/03/02 14:55:42 by msawada          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-void str_move(unsigned char *d, unsigned char *s, size_t n)
+
+void	str_move(unsigned char *d, unsigned char *s, size_t n)
 {
-	size_t i;
+	size_t	i;
 
 	i = 0;
 	while (i < n)
@@ -23,7 +24,7 @@ void str_move(unsigned char *d, unsigned char *s, size_t n)
 	}
 }
 
-void *ft_memmove(void *dest, const void *src, size_t n)
+void	*ft_memmove(void *dest, const void *src, size_t n)
 {
 	unsigned char	*d;
 	unsigned char	*s;
@@ -47,18 +48,18 @@ void *ft_memmove(void *dest, const void *src, size_t n)
 	return (d);
 }
 
-#include <stdio.h>
-#include <string.h>
-int main()
-{
-	char source[] = "Hello, World!";
-	char destination[20];
+// #include <stdio.h>
+// #include <string.h>
+// int main()
+// {
+// 	char source[] = "Hello, World!";
+// 	char destination[20];
 
-	ft_memmove(destination, source, 5);
-	// memmove(destination, source, 5);
+// 	ft_memmove(destination, source, 5);
+// 	// memmove(destination, source, 5);
 
-	printf("コピー元: %s\n", source);
-	printf("結果: %s\n", destination);
+// 	printf("コピー元: %s\n", source);
+// 	printf("結果: %s\n", destination);
 
-	return 0;
-}
+// 	return 0;
+// }

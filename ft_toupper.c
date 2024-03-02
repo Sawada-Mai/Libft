@@ -6,11 +6,11 @@
 /*   By: msawada <msawada@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/17 17:08:51 by msawada           #+#    #+#             */
-/*   Updated: 2024/02/25 10:53:02 by msawada          ###   ########.fr       */
+/*   Updated: 2024/03/02 14:54:16 by msawada          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_toupper(int c)
+int	ft_toupper(int c)
 {
 	if (c >= 'a' && c <= 'z')
 	{

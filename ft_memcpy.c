@@ -6,12 +6,13 @@
 /*   By: msawada <msawada@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/19 12:54:47 by msawada           #+#    #+#             */
-/*   Updated: 2024/02/25 14:49:23 by msawada          ###   ########.fr       */
+/*   Updated: 2024/03/02 14:47:25 by msawada          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-void *ft_memcpy(void *dest, const void *src, size_t n)
+
+void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
 	unsigned char	*d;
 	unsigned char	*s;

@@ -6,11 +6,11 @@
 /*   By: msawada <msawada@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/17 16:37:50 by msawada           #+#    #+#             */
-/*   Updated: 2024/02/25 10:41:19 by msawada          ###   ########.fr       */
+/*   Updated: 2024/03/02 14:46:44 by msawada          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_isdigit(int c)
+int	ft_isdigit(int c)
 {
 	if ((c >= '0' && c <= '9'))
 		return (1);

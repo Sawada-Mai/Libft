@@ -6,11 +6,11 @@
 /*   By: msawada <msawada@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/17 17:16:27 by msawada           #+#    #+#             */
-/*   Updated: 2024/02/25 10:53:31 by msawada          ###   ########.fr       */
+/*   Updated: 2024/03/02 14:54:12 by msawada          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_tolower(int c)
+int	ft_tolower(int c)
 {
 	if (c >= 'A' && c <= 'Z')
 	{

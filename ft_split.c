@@ -6,12 +6,13 @@
 /*   By: msawada <msawada@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/19 12:48:34 by msawada           #+#    #+#             */
-/*   Updated: 2024/02/19 12:48:36 by msawada          ###   ########.fr       */
+/*   Updated: 2024/03/02 15:51:40 by msawada          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-char *ft_storage(const char *s, int start, int end)
+
+char	*ft_storage(const char *s, int start, int end)
 {
 	unsigned int	i;
 	unsigned int	size;
@@ -31,48 +32,18 @@ char *ft_storage(const char *s, int start, int end)
 	return (str);
 }
 
-int count_splits(char const *s, char c)
+char	**make_str(char const *s, char c, char **sp)
 {
-	unsigned int	n;
-	unsigned int	flag;
-
-	n = 0;
-	flag = 0;
-	while (*s)
-	{
-		if(*s != c && flag == 0)
-		{
-			n++;
-			flag = 1;
-		}
-		else if(*s == c)
-		{
-			flag = 0;
-		}
-		s++;
-	}
-	return (n);
-}
-
-char **ft_split(char const *s, char c)
-{
-	char			**sp;
-	unsigned int	split_count;
 	unsigned int	i;
 	unsigned int	j;
 	unsigned int	start;
-	
-	if (s == NULL)
-		return (NULL);
-	split_count = count_splits(s, c);
-	sp = (char **)malloc(sizeof(char *) * (split_count + 1));
-	if (sp == NULL)
-		return (NULL);
+
 	i = 0;
 	j = 0;
+	start = 0;
 	while (s[i])
 	{
-		if(s[i] != c)
+		if (s[i] != c)
 		{
 			start = i;
 			while (s[i] != '\0' && s[i] != c)
@@ -86,7 +57,44 @@ char **ft_split(char const *s, char c)
 			i++;
 	}
 	sp[j] = NULL;
-	return (sp);
+	return (&*sp);
+}
+
+int	count_splits(char const *s, char c)
+{
+	unsigned int	n;
+	unsigned int	flag;
+
+	n = 0;
+	flag = 0;
+	while (*s)
+	{
+		if (*s != c && flag == 0)
+		{
+			n++;
+			flag = 1;
+		}
+		else if (*s == c)
+		{
+			flag = 0;
+		}
+		s++;
+	}
+	return (n);
+}
+
+char	**ft_split(char const *s, char c)
+{
+	char			**sp;
+	unsigned int	split_count;
+
+	if (s == NULL)
+		return (NULL);
+	split_count = count_splits(s, c);
+	sp = (char **)malloc(sizeof(char *) * (split_count + 1));
+	if (sp == NULL)
+		return (NULL);
+	return ((char **)(make_str(s, c, sp)));
 }
 
 // #include <stdio.h>

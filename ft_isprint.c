@@ -6,11 +6,11 @@
 /*   By: msawada <msawada@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/17 17:01:19 by msawada           #+#    #+#             */
-/*   Updated: 2024/02/25 10:49:07 by msawada          ###   ########.fr       */
+/*   Updated: 2024/03/02 14:46:49 by msawada          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_isprint(int c)
+int	ft_isprint(int c)
 {
 	if (c >= 32 && c <= 126)
 		return (1);

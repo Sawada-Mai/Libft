@@ -6,17 +6,18 @@
 /*   By: msawada <msawada@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/19 12:54:02 by msawada           #+#    #+#             */
-/*   Updated: 2024/02/25 13:46:26 by msawada          ###   ########.fr       */
+/*   Updated: 2024/03/02 14:42:53 by msawada          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-void ft_bzero(void *s, size_t n)
+
+void	ft_bzero(void *s, size_t n)
 {
 	unsigned char	*ptr;
 	size_t			i;
 
-	ptr = (unsigned char *)s; 
+	ptr = (unsigned char *)s;
 	i = 0;
 	while (i < n)
 	{

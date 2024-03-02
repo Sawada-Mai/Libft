@@ -6,12 +6,13 @@
 /*   By: msawada <msawada@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/19 12:36:18 by msawada           #+#    #+#             */
-/*   Updated: 2024/02/25 17:20:07 by msawada          ###   ########.fr       */
+/*   Updated: 2024/03/02 15:26:16 by msawada          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-void *ft_calloc(size_t count, size_t size)
+
+void	*ft_calloc(size_t count, size_t size)
 {
 	void	*p;
 	size_t	i;
@@ -25,7 +26,7 @@ void *ft_calloc(size_t count, size_t size)
 		i = 1;
 	else
 		i = count * size;
-	p = (void*)malloc(i);
+	p = (void *) malloc(i);
 	if (p == NULL)
 		return (NULL);
 	ft_memset(p, 0, i);

@@ -6,14 +6,14 @@
 /*   By: msawada <msawada@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/17 16:44:21 by msawada           #+#    #+#             */
-/*   Updated: 2024/02/25 10:42:11 by msawada          ###   ########.fr       */
+/*   Updated: 2024/03/02 15:19:18 by msawada          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_isalnum(int c)
+int	ft_isalnum(int c)
 {
-	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z') 
-	|| (c >= '0' && c<= '9'))
+	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z')
+		|| (c >= '0' && c <= '9'))
 		return (1);
 	else
 		return (0);

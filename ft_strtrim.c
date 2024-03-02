@@ -6,12 +6,13 @@
 /*   By: msawada <msawada@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/19 12:47:57 by msawada           #+#    #+#             */
-/*   Updated: 2024/02/19 12:48:01 by msawada          ###   ########.fr       */
+/*   Updated: 2024/03/02 18:07:13 by msawada          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-int check_char(char c, char const *set)
+
+int	check_char(char c, char const *set)
 {
 	while (*set)
 	{
@@ -24,16 +25,16 @@ int check_char(char c, char const *set)
 	return (0);
 }
 
-char *str_copy(char const *s1, unsigned int start, unsigned int end)
+char	*str_copy(char const *s1, unsigned int start, unsigned int end)
 {
 	unsigned int	i;
 	char			*str;
 
-	str = (char *)malloc(sizeof(char) * (end - start + 1));
+	str = (char *)malloc(sizeof(char) * (end - start + 2));
 	if (str == NULL)
 		return (NULL);
 	i = 0;
-	while ((start + i) < end)
+	while ((start + i) <= end)
 	{
 		str[i] = s1[start + i];
 		i++;
@@ -42,7 +43,7 @@ char *str_copy(char const *s1, unsigned int start, unsigned int end)
 	return (str);
 }
 
-char *ft_strtrim(char const *s1, char const *set)
+char	*ft_strtrim(char const *s1, char const *set)
 {
 	unsigned int	start;
 	unsigned int	end;
@@ -64,5 +65,5 @@ char *ft_strtrim(char const *s1, char const *set)
 	{
 		end--;
 	}
-	return str_copy(s1, start, end + 1);
+	return (str_copy(s1, start, end));
 }

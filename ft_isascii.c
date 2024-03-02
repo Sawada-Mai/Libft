@@ -6,11 +6,11 @@
 /*   By: msawada <msawada@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/17 16:52:11 by msawada           #+#    #+#             */
-/*   Updated: 2024/02/25 10:44:39 by msawada          ###   ########.fr       */
+/*   Updated: 2024/03/02 14:46:39 by msawada          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_isascii(int c)
+int	ft_isascii(int c)
 {
 	if (c >= 0 && c <= 127)
 		return (1);
