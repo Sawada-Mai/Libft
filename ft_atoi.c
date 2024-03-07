@@ -6,14 +6,14 @@
 /*   By: msawada <msawada@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/19 12:30:50 by msawada           #+#    #+#             */
-/*   Updated: 2024/03/02 14:42:05 by msawada          ###   ########.fr       */
+/*   Updated: 2024/03/07 16:10:40 by msawada          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include "libft.h"
 
-int	scheck_num(unsigned long long num, int sign)
+int	check_num(unsigned long long num, int sign)
 {
 	if (num == 0)
 		return (0);
