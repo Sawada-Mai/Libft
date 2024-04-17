@@ -6,7 +6,7 @@
 /*   By: msawada <msawada@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/17 17:43:16 by msawada           #+#    #+#             */
-/*   Updated: 2024/03/02 15:17:28 by msawada          ###   ########.fr       */
+/*   Updated: 2024/04/17 14:33:20 by msawada          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,7 +53,7 @@ char	**ft_split(char const *s, char c);
 char	*ft_itoa(int n);
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 size_t	ft_strlen(const char *s);
-size_t	ft_strlcpy(char *restrict dst, const char *restrict src, size_t len);
+size_t	ft_strlcpy(char *dst, const char *src, size_t len);
 size_t	ft_strlcat(char *dest, const char *src, size_t size);
 
 #endif

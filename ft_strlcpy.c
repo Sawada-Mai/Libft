@@ -6,13 +6,13 @@
 /*   By: msawada <msawada@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/17 18:04:45 by msawada           #+#    #+#             */
-/*   Updated: 2024/03/02 15:05:32 by msawada          ###   ########.fr       */
+/*   Updated: 2024/04/17 14:33:31 by msawada          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlcpy(char *restrict dst, const char *restrict src, size_t len)
+size_t	ft_strlcpy(char *dst, const char *src, size_t len)
 {
 	size_t	i;
 
