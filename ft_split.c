@@ -6,7 +6,7 @@
 /*   By: msawada <msawada@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/19 12:48:34 by msawada           #+#    #+#             */
-/*   Updated: 2024/03/02 15:51:40 by msawada          ###   ########.fr       */
+/*   Updated: 2024/04/17 19:29:37 by msawada          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,7 +57,7 @@ char	**make_str(char const *s, char c, char **sp)
 			i++;
 	}
 	sp[j] = NULL;
-	return (&*sp);
+	return (sp);
 }
 
 int	count_splits(char const *s, char c)
