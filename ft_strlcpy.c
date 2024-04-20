@@ -6,7 +6,7 @@
 /*   By: msawada <msawada@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/17 18:04:45 by msawada           #+#    #+#             */
-/*   Updated: 2024/04/17 14:33:31 by msawada          ###   ########.fr       */
+/*   Updated: 2024/04/20 17:13:53 by msawada          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t len)
 	size_t	i;
 
 	i = 0;
-	if (len != 0)
+	if (len > 0)
 	{
 		while (src[i] && (i + 1) < len)
 		{

@@ -1,7 +1,0 @@
-{
-	"files.associations": {
-		"string.h": "c",
-		"ratio": "c",
-		"locale": "c"
-	}
-}
