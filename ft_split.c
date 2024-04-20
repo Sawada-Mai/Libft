@@ -6,11 +6,23 @@
 /*   By: msawada <msawada@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/19 12:48:34 by msawada           #+#    #+#             */
-/*   Updated: 2024/04/17 19:29:37 by msawada          ###   ########.fr       */
+/*   Updated: 2024/04/20 19:19:23 by msawada          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+void	*free_strag(char **sp)
+{
+	int	i;
+
+	i = 0;
+	while (sp[i])
+	{
+		free(sp[i]);
+		i++;
+	}
+}
 
 char	*ft_storage(const char *s, int start, int end)
 {
@@ -47,10 +59,10 @@ char	**make_str(char const *s, char c, char **sp)
 		{
 			start = i;
 			while (s[i] != '\0' && s[i] != c)
-			{
 				i++;
-			}
 			sp[j] = ft_storage(s, start, i);
+			if (sp[j] == NULL)
+				free_strage(sp);
 			j++;
 		}
 		else
