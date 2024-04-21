@@ -6,7 +6,7 @@
 /*   By: msawada <msawada@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/19 12:30:50 by msawada           #+#    #+#             */
-/*   Updated: 2024/04/20 16:43:57 by msawada          ###   ########.fr       */
+/*   Updated: 2024/04/21 16:01:41 by msawada          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ int	change_num(const char *nptr, int sign)
 			|| (num > LONG_MAX / 10 && sign == 1))
 			return ((int)LONG_MAX);
 		else if ((num >= LONG_MAX / 10 && *nptr >= '8' && sign == -1)
-			|| (num > LONG_MAX / 10 && sign == 1))
+			|| (num > LONG_MAX / 10 && sign == -1))
 			return ((int)LONG_MIN);
 		num *= 10;
 		num += *nptr - '0';

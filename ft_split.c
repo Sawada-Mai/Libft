@@ -6,7 +6,7 @@
 /*   By: msawada <msawada@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/19 12:48:34 by msawada           #+#    #+#             */
-/*   Updated: 2024/04/21 15:22:59 by msawada          ###   ########.fr       */
+/*   Updated: 2024/04/21 16:03:39 by msawada          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,7 @@ int	free_strage(char **sp)
 		free(sp[i]);
 		i++;
 	}
+	free(sp);
 	return (1);
 }
 
