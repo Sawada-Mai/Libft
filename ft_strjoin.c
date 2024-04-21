@@ -6,13 +6,13 @@
 /*   By: msawada <msawada@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/19 12:47:17 by msawada           #+#    #+#             */
-/*   Updated: 2024/03/02 15:36:28 by msawada          ###   ########.fr       */
+/*   Updated: 2024/04/21 15:22:25 by msawada          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*make_str(char const *s1, char const *s2, char *str)
+char	*make_str_strjoin(char const *s1, char const *s2, char *str)
 {
 	unsigned int	i;
 	unsigned int	j;
@@ -46,5 +46,5 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	str = (char *)malloc(sizeof(char) * (size + 1));
 	if (str == NULL)
 		return (NULL);
-	return (make_str(s1, s2, str));
+	return (make_str_strjoin(s1, s2, str));
 }
