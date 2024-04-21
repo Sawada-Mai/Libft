@@ -6,13 +6,13 @@
 /*   By: msawada <msawada@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/19 12:48:34 by msawada           #+#    #+#             */
-/*   Updated: 2024/04/20 19:19:23 by msawada          ###   ########.fr       */
+/*   Updated: 2024/04/21 14:51:08 by msawada          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*free_strag(char **sp)
+int	free_strage(char **sp)
 {
 	int	i;
 
@@ -22,6 +22,7 @@ void	*free_strag(char **sp)
 		free(sp[i]);
 		i++;
 	}
+	return (1);
 }
 
 char	*ft_storage(const char *s, int start, int end)
